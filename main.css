@@ -1,0 +1,122 @@
+:root {
+  --background-color: #eee;
+  --main-color: #738bf2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: #110E28;
+  padding: 15px;
+}
+.repos {
+  padding: 20px;
+  background-color: #e0e0e0;
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+}
+.container {
+  height: 100px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+input {
+  outline: none;
+  width: 500px;
+  height: 54px;
+  padding: 10px 15px;
+  border: 2px solid var(--main-color);
+  outline: none;
+  border-radius: 10px;
+  color: #777;
+  caret-color: #777;
+  font-size: 20px;
+}
+button {
+  width: 200px;
+  height: 54px;
+  color: #fff;
+  background-color: var(--main-color);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #392d7e;
+}
+.repos-data {
+  width: 100%;
+  padding: 20px;
+  color: #777;
+  font-size: 20px;
+}
+.size {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  color: #738bf2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgb(190, 173, 173);
+  margin: 0 auto 20px;
+  font-size: 25px;
+  font-weight: 900;
+  border-radius: 8px;
+}
+.repos-data .repo {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  height: 54px;
+  align-items: center;
+  border-radius: 10px;
+  color: var(--main-color);
+  box-shadow: 0 0 10px rgb(190, 173, 173);
+  width: 100%;
+  background: #fff;
+}
+.repos-data .repo:not(:last-child) {
+  margin-bottom: 10px;
+}
+.repo div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.repo div .stars {
+  font-size: 18px;
+  align-items: center;
+  background-color: #009688;
+  color: #fff;
+  padding: 0 15px;
+  border-radius: 8px;
+}
+.repos-data .repo a {
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--main-color);
+  font-size: 18px;
+  width: 80px;
+  transition: 0.3s;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.repos-data .repo a:hover {
+  background-color: #392d7e;
+}
